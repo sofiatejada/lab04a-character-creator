@@ -9,63 +9,75 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Character Creator</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
-    </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <header><h1 id="robot-name">Robot</h1></header>
+        <content>
+            <section id="robot-image"></section>
+            <section>
+                <p id="charge"></p>
+                <p id="mood"></p>
+                <p id="pokemon"></p>
+            </section>
+        </content>
+        <content>
+            <h2>How is my robot doing?</h2>
+            <form>
+                <label>How much charge do I have?</label>
+                <select>
+                    <option id="charge-low1" value="1">1</option>
+                    <option id="charge-low2" value="2">2</option>
+                    <option id="charge-low3" value="3">3</option>
+                    <option id="charge-med1" value="4">4</option>
+                    <option id="charge-med2" value="5">5</option>
+                    <option id="charge-med3" value="6">6</option>
+                    <option id="charge-hi1" value="7">7</option>
+                    <option id="charge-hi2" value="8">8</option>
+                    <option id="charge-hi3" value="9">9</option>
+                </select>
+            </form>
+            <form>
+                <label>How do I feel?</label>
+                <select>
+                    <option id="mood-low1" value="1">1</option>
+                    <option id="mood-low2" value="2">2</option>
+                    <option id="mood-low3" value="3">3</option>
+                    <option id="mood-med1" value="4">4</option>
+                    <option id="mood-med2" value="5">5</option>
+                    <option id="mood-med3" value="6">6</option>
+                    <option id="mood-hi1" value="7">7</option>
+                    <option id="mood-hi2" value="8">8</option>
+                    <option id="mood-hi3" value="9">9</option>
+                </select>
+            </form>
+            <form>
+                <label>Favorite pokemon?</label>
+                <select>
+                    <option id="poki-low1" value="1">1</option>
+                    <option id="poki-low2" value="2">2</option>
+                    <option id="poki-low3" value="3">3</option>
+                    <option id="poki-med1" value="4">4</option>
+                    <option id="poki-med2" value="5">5</option>
+                    <option id="poki-med3" value="6">6</option>
+                    <option id="poki-hi1" value="7">7</option>
+                    <option id="poki-hi2" value="8">8</option>
+                    <option id="poki-hi3" value="9">9</option>
+                </select>
+            </form>
+            <Label>What's Robot's name?</Label> <input id="name-input"/>
+        </content>
+        <p><button id="submit">Submit</button></p>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
 
-        </section>
+
+
+
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+
+
 
     <script type="module" src="./app.js"></script>
 </body>

@@ -31,13 +31,15 @@ submit.addEventListener('click', () => {
     poki.src = setPoki(pokiMenu.value);
 
     //create change in background depending on what pokemon was chosen
-
+    let green = '#38A3A5';
+    let blue = '#00B4D8';
+    let orange = '#ff9b42';
     if (setImage(setPoki(pokiMenu.value)) === 'bulbasaur') {
-        bodyBack.style.background = 'green';
+        bodyBack.style.background = green;
     } else if (setImage(setPoki(pokiMenu.value)) === 'squirtle') {
-        bodyBack.style.background = 'blue';
+        bodyBack.style.background = blue;
     } else if (setImage(setPoki(pokiMenu.value)) === 'charmander') {
-        bodyBack.style.background = 'orange';
+        bodyBack.style.background = orange;
     }
 });
 

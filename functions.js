@@ -19,12 +19,12 @@ export function setMood(value) {
     }
 }
 export function setPoki(value) {
-    if (value === 1) {
+    if (value === '1') {
         return './bulbasaur.png';
     }
-    else if (value === 2) {
+    else if (value === '2') {
         return './squirtle.png';
-    } else if (value === 3) {
+    } else if (value === '3') {
         return './charmander.png';
     }
 }

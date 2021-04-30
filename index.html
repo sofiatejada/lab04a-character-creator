@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/home.css">
     <title>Character Creator</title>
 </head>
 
@@ -16,18 +14,18 @@
     <main>
         <header><h1 id="robot-name">Robot</h1></header>
         <content>
-            <section id="robot-image"></section>
+            <section></section>
             <section>
-                <p id="charge"></p>
-                <p id="mood"></p>
-                <p id="pokemon"></p>
+                <p><img id="charge" src=""/></p>
+                <p><img id="mood" src=""/></p>
+                <p><img id="pokemon" src=""/></p>
             </section>
         </content>
         <content>
             <h2>How is my robot doing?</h2>
             <form>
                 <label>How much charge do I have?</label>
-                <select>
+                <select id="charge-menu">
                     <option id="charge-low1" value="1">1</option>
                     <option id="charge-low2" value="2">2</option>
                     <option id="charge-low3" value="3">3</option>
@@ -41,7 +39,7 @@
             </form>
             <form>
                 <label>How do I feel?</label>
-                <select>
+                <select id="mood-menu">
                     <option id="mood-low1" value="1">1</option>
                     <option id="mood-low2" value="2">2</option>
                     <option id="mood-low3" value="3">3</option>
@@ -55,16 +53,10 @@
             </form>
             <form>
                 <label>Favorite pokemon?</label>
-                <select>
+                <select id="poki-menu">
                     <option id="poki-low1" value="1">1</option>
                     <option id="poki-low2" value="2">2</option>
                     <option id="poki-low3" value="3">3</option>
-                    <option id="poki-med1" value="4">4</option>
-                    <option id="poki-med2" value="5">5</option>
-                    <option id="poki-med3" value="6">6</option>
-                    <option id="poki-hi1" value="7">7</option>
-                    <option id="poki-hi2" value="8">8</option>
-                    <option id="poki-hi3" value="9">9</option>
                 </select>
             </form>
             <Label>What's Robot's name?</Label> <input id="name-input"/>

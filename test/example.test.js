@@ -15,7 +15,7 @@ test('time to test a function', (expect) => {
     // Call the function you're testing and set the result to a const
     const actualCharge = setCharge(3);
     const actualMood = setMood(3);
-    const actualPoki = setPoki(3);
+    const actualPoki = setPoki('3');
     const actualImage = setImage('./charmander.png');
 
     //Expect

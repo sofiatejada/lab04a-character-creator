@@ -7,21 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
     <title>Character Creator</title>
 </head>
 
 <body id="body-back">
     <main>
-        <header><h1 id="robot-name">Robot</h1></header>
-        <content>
-            <section><img src="./robot.png"/></section>
-            <section>
-                <p><img id="charge" src=""/></p>
-                <p><img id="mood" src=""/></p>
-                <p><img id="pokemon" src=""/></p>
-            </section>
-        </content>
-        <content>
+        <div class="inputs-buttons">
             <h2>How is my robot doing?</h2>
             <form>
                 <label>How much charge do I have?</label>
@@ -60,8 +52,24 @@
                 </select>
             </form>
             <Label>What's Robot's name?</Label> <input id="name-input"/>
-        </content>
-        <p><button id="submit">Submit</button></p>
+            <p><button id="submit">Submit</button></p>
+        </div>
+        <div class="images">
+            <section class="charge">
+                <p><img class="charge-image" id="charge" src="./question.png"/></p>
+            </section>
+            <content class="robot-image">
+                <header><h1 id="robot-name">Robot</h1></header>
+                <section><img class="bounce" src="./robot.png"/></section>
+                <section class="poki-container">
+                    <p><img class="pokemon-image" id="pokemon" src="./question.png"/></p>
+                </section>
+            </content>
+            <section class="mood">
+                <p><img class="mood-image" id="mood" src="./question.png"/></p>
+            </section>
+        </div>
+        
 
 
 

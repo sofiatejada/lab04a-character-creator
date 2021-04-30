@@ -1,0 +1,93 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #023e8a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.robot-image {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+    margin-top: 50px;
+}
+
+
+
+.bounce {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:20px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:0px; top:20px;}
+    100% {left:0px; top:0px;}
+  }
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokemon-image, .charge-image, .mood-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: double rgb(220, 229, 231) 5px;
+    background: #CAF0F8;
+}
+
+.poki-container {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.charge, .mood {
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.inputs-buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    border: double #023e8a 5px;
+    border-radius: 10px;
+    padding: 5px;
+    height: 280px;
+    width: 350px;
+    text-align: center;
+    background: #CAF0F8;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+.mood {
+    margin-right: 300px;
+}
+
+.charge {
+    margin-left: 300px;
+}
+
+form {
+    margin: 10px;
+}
+
+input {
+    height: 20px;
+    width: 60px;
+}

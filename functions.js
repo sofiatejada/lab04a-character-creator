@@ -1,40 +1,40 @@
 export function setCharge(value) {
     if (value >= 1 && value <= 3) {
-        return 'low';
+        return './low-battery.png';
     }
     else if (value >= 4 && value <= 6) {
-        return 'medium';
+        return './medium-battery.png';
     } else if (value >= 7 && value <= 9) {
-        return 'high';
+        return './high-battery.png';
     }
 }
 export function setMood(value) {
     if (value >= 1 && value <= 3) {
-        return 'low';
+        return './sad.png';
     }
     else if (value >= 4 && value <= 6) {
-        return 'medium';
+        return './neutral.png';
     } else if (value >= 7 && value <= 9) {
-        return 'high';
+        return './happy.png';
     }
 }
 export function setPoki(value) {
     if (value === 1) {
-        return 'bulbasaur';
+        return './bulbasaur.png';
     }
     else if (value === 2) {
-        return 'squirtle';
+        return './squirtle.png';
     } else if (value === 3) {
-        return 'charmander';
+        return './charmander.png';
     }
 }
 
 export function setImage(pokemon) {
-    if (pokemon === 'bulbasaur') {
-        return 'bulbasaur image';
-    } else if (pokemon === 'squirtle') {
-        return 'squirtle image';
-    } else if (pokemon === 'charmander') {
-        return 'charmander image';
+    if (pokemon === './bulbasaur.png') {
+        return 'bulbasaur';
+    } else if (pokemon === './squirtle.png') {
+        return 'squirtle';
+    } else if (pokemon === './charmander.png') {
+        return 'charmander';
     }
 }

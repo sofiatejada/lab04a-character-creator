@@ -8,15 +8,15 @@ test('time to test a function', (expect) => {
     // Set up your arguments and expectations
     const charge = 'low';
     const mood = 'low';
-    const poki = 'charizard';
-    const image = 'charizard image';
+    const poki = 'charmander';
+    const image = 'charmander image';
     
     //Act 
     // Call the function you're testing and set the result to a const
     const actualCharge = setCharge(3);
     const actualMood = setMood(3);
     const actualPoki = setPoki(3);
-    const actualImage = setImage('charizard');
+    const actualImage = setImage('charmander');
 
     //Expect
     // Make assertions about what is expected versus the actual result

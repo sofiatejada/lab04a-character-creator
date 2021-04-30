@@ -25,7 +25,7 @@ export function setPoki(value) {
     else if (value === 2) {
         return 'squirtle';
     } else if (value === 3) {
-        return 'charizard';
+        return 'charmander';
     }
 }
 
@@ -34,7 +34,7 @@ export function setImage(pokemon) {
         return 'bulbasaur image';
     } else if (pokemon === 'squirtle') {
         return 'squirtle image';
-    } else if (pokemon === 'charizard') {
-        return 'charizard image';
+    } else if (pokemon === 'charmander') {
+        return 'charmander image';
     }
 }

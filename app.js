@@ -12,7 +12,7 @@ const charge = document.getElementById('charge');
 const mood = document.getElementById('mood');
 const poki = document.getElementById('pokemon');
 const robotName = document.getElementById('robot-name');
-const robotImage = document.getElementById('robot-image');
+const bodyBack = document.getElementById('body-back');
 
 
 //grab DOM elements for input
@@ -29,6 +29,16 @@ submit.addEventListener('click', () => {
     charge.src = setCharge(chargeMenu.value);
     mood.src = setMood(moodMenu.value);
     poki.src = setPoki(pokiMenu.value);
+
+    //create change in background depending on what pokemon was chosen
+
+    if (setImage(setPoki(pokiMenu.value)) === 'bulbasaur') {
+        bodyBack.style.background = 'green';
+    } else if (setImage(setPoki(pokiMenu.value)) === 'squirtle') {
+        bodyBack.style.background = 'blue';
+    } else if (setImage(setPoki(pokiMenu.value)) === 'charmander') {
+        bodyBack.style.background = 'orange';
+    }
 });
 
-//create change in background depending on what pokemon was chosen
+
